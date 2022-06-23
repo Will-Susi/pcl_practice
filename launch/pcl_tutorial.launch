@@ -1,0 +1,15 @@
+<launch>
+    <node pkg="pcl_tutorial" type="pcl_tutorial" name="pcl_tutorial" output="screen">
+        <param name= "cloud_points" value= "/camera/depth/points"/>
+        <param name= "cloud_output" value= "output"/>
+        
+        <param name= "min_filter_limit" value= "2.0"/>
+        <param name= "max_filter_limit" value= "4.0"/>
+        <param name= "filter_field" value= "z"/>
+
+        <param name= "distance_threshold" value= "10.0"/>
+        <param name= "point_color_threshold" value= "6.0"/>
+        <param name= "region_color_threshold" value= "5.0"/>
+        <param name= "min_cluster_size" value= "600"/>
+    </node>
+</launch>
